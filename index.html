@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+       
+        <link rel="stylesheet" href="./css/style.css">
+
+        
+    </head>
+    <body onload="multipleTimesWinners()">
+        <header>
+            <h1 id="appName">Nobel Prize Winners </h1>
+         </header>
+
+         <section>
+           <div id="head">
+             <div id="multiHeader">Muiltiple Nobel Prize Winners</div>
+            </div>
+             <div id="multitable">
+             <table id="multiplePrizeWinner">
+                <tr>
+                  <th class="multihead">Firstname</th>
+                  <th class="multihead">Surname</th> 
+                  <th class="multihead">Year</th>
+                  <th class="multihead">Category</th>
+                </tr>
+              </table>
+            </div>
+         </section>
+
+         <section >
+           <div class="prizesectionhead">
+           <div id="filhead">
+             <div id="prizehead">Nobel Prize Winners</div>
+           </div>
+             <div id="filtersection">
+                <div id="filter">
+                  <div class="filtersection">
+                      <div class="filterText">Year&nbsp;&nbsp;</div>
+                        <select name="year" id="year">
+                          <option value="all">All</option>
+                        </select>
+                      </div>
+                      <div class="filtersection">
+                        <div class="filterText">Category&nbsp;&nbsp;</div>
+                        <select name="category" id="category">
+                          <option value="all">ALL</option>
+                        </select>
+                    </div>
+                    <button onclick="filterSearch()">Search</button>
+                </div>
+              </div>
+            </div>
+             <div id="table">
+                <table id="nobelPrizeWinner"></table>
+             </div><br>
+             <div id="loading">
+              <img id="loadingimg" src="./img/loading1.gif">
+            </div>
+         </section>
+
+         <script src="./js/script.js"></script>
+    </body>
+</html>
